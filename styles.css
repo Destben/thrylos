@@ -1,0 +1,192 @@
+﻿/*
+Lakeland Reeds Bed and Breakfast style sheet
+Filename: styles.css
+
+
+
+Author: Fran si
+Date: 1/10/22
+HTML5 and CSS3 Illustrated Unit G, Lessons
+*/
+
+
+
+/* reset styles */
+html {
+font-size: 16px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p {
+border: 0;
+padding: 0;
+margin: 0;
+}
+img {
+max-width: 100%;
+
+}
+
+
+
+/* body */
+body {
+margin: 0 auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+p {
+font-size: 1.3em;
+line-height: 1.6em;
+}
+a:link {
+color: black;
+}
+a:visited {
+color: #888;
+}
+
+
+
+/* skip navigation link */
+p.skipnavigation a {
+position: absolute;
+left: -10000px;
+}
+p.skipnavigation a:focus {
+color: ivory;
+background-color: #34180f;
+top: 0.4em;
+left: auto;
+right: 0.4em;
+z-index: 2;
+}
+
+
+
+/* header section */
+h1 {
+text-align: center;
+font-family: Bitter, "Times New Roman", Times, serif;
+font-weight: 700;
+color: ivory;
+background-size: cover ;
+font-size: 2.4em;
+}
+.box {
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+
+
+/* site navigation bar */
+nav.sitenavigation {
+color: #34180f;
+text-align: center;
+background-color: hsl(180, 83%, 44%);
+}
+nav.sitenavigation p {
+margin: 0.3em 0.5em;
+display: inline-block;
+}
+nav.sitenavigation a:link {
+text-decoration: none;
+color: #34180f;
+}
+nav.sitenavigation a:visited {
+color: #744f42;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+color: ivory;
+}
+
+
+
+/* main content */
+article {
+background: url("images/background.jpg");
+background-size: cover;
+}
+article div {
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 3% 1em;
+background-color: ivory;
+overflow: auto;
+box-shadow: 0 10px 6px -6px #777;
+}
+h2 {
+padding: 0.4em 0.4em 0;
+text-align: center;
+font-family: Bitter, "Times New Roman", Times, serif;
+font-size: 2em;
+font-weight: 700;
+}
+h3 {
+margin-top: 1.4em;
+font-size: 1.6em;
+font-family: Bitter, "Times New Roman", Times, serif;
+font-weight: 700;
+clear: both;
+}
+article p {
+padding-top: 1em;
+}
+article p.pullquote {
+font-size: 1.7em;
+}
+article p.imagemap {
+	text-align: center;
+} 
+article p.imagemap img {
+	border: 1px solid black;
+	max-width: none;
+}
+article figure {
+max-width: 100%;
+margin-left: 3em;
+float: right;
+}
+
+/*aside element*/
+aside{
+	max-width: 100%;
+	margin-left: 20em;
+	float: relative;
+	margin-right: 15em;
+}
+
+article figure.example {
+margin-top: 2em;
+}
+article figcaption {
+text-align: center;
+}
+
+
+
+/* footer section */
+footer {
+padding: 0.6em;
+background-color: #b149bb;
+color: ivory;
+text-align: center;
+}
+.accent {
+font-weight: bold;
+}
+
+
+
+/* print styles */
+@media print {
+body, h1, article, footer {
+color: rgb(0,0,0);
+background: rgb(255,255,255);
+}
+body {
+max-width: 100%;
+}
+nav {
+display: none;
+}
+@page {
+margin: 0.75in;
+}
