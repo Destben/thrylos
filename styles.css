@@ -69,9 +69,9 @@ nav a {
     -webkit-box-shadow: 10px 10px 6px -6px #000000;
     margin-left: 0px;
 }
-nav a:hover {
 
-}
+
+
 header {
     height: 290px;
     width: 100%;
@@ -141,8 +141,7 @@ footer p {
     font-size: 11px;
     font-weight: 400;
 }
-footer a {
-}
+
 .h {
     margin-top: 10px;
     margin-left: 10px;
