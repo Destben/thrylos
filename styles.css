@@ -1,192 +1,136 @@
-﻿/*
-Lakeland Reeds Bed and Breakfast style sheet
-Filename: styles.css
-
-
-
-Author: Fran si
-Date: 1/10/22
-HTML5 and CSS3 Illustrated Unit G, Lessons
-*/
-
-
-
-/* reset styles */
-html {
-font-size: 16px;
-}
-a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p {
-border: 0;
-padding: 0;
-margin: 0;
-}
-img {
-max-width: 100%;
-
+﻿body {
+    margin: 0px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #000000;
+    padding: 0px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,0,4,1.00) 0%,rgba(0,21,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,0,4,1.00) 0%,rgba(0,21,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,0,4,1.00) 0%,rgba(0,21,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,0,4,1.00) 0%,rgba(0,21,255,1.00) 100%);
 }
 
 
-
-/* body */
-body {
-margin: 0 auto;
-font-family: Arial, Helvetica, sans-serif;
-}
-p {
-font-size: 1.3em;
-line-height: 1.6em;
-}
-a:link {
-color: black;
-}
-a:visited {
-color: #888;
-}
-
-
-
-/* skip navigation link */
-p.skipnavigation a {
-position: absolute;
-left: -10000px;
-}
-p.skipnavigation a:focus {
-color: ivory;
-background-color: #34180f;
-top: 0.4em;
-left: auto;
-right: 0.4em;
-z-index: 2;
-}
-
-
-
-/* header section */
-h1 {
-text-align: center;
-font-family: Bitter, "Times New Roman", Times, serif;
-font-weight: 700;
-color: ivory;
-background-size: cover ;
-font-size: 2.4em;
-}
-.box {
-	box-shadow: 0 10px 6px -6px #777;
-}
-
-
-
-/* site navigation bar */
-nav.sitenavigation {
-color: #34180f;
-text-align: center;
-background-color: hsl(180, 83%, 44%);
-}
-nav.sitenavigation p {
-margin: 0.3em 0.5em;
-display: inline-block;
-}
-nav.sitenavigation a:link {
-text-decoration: none;
-color: #34180f;
-}
-nav.sitenavigation a:visited {
-color: #744f42;
-}
-nav.sitenavigation a:hover, nav.sitenavigation a:focus {
-color: ivory;
-}
-
-
-
-/* main content */
-article {
-background: url("images/background.jpg");
-background-size: cover;
-}
-article div {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 3% 1em;
-background-color: ivory;
-overflow: auto;
-box-shadow: 0 10px 6px -6px #777;
-}
-h2 {
-padding: 0.4em 0.4em 0;
-text-align: center;
-font-family: Bitter, "Times New Roman", Times, serif;
-font-size: 2em;
-font-weight: 700;
-}
-h3 {
-margin-top: 1.4em;
-font-size: 1.6em;
-font-family: Bitter, "Times New Roman", Times, serif;
-font-weight: 700;
-clear: both;
-}
-article p {
-padding-top: 1em;
-}
-article p.pullquote {
-font-size: 1.7em;
-}
-article p.imagemap {
-	text-align: center;
-} 
-article p.imagemap img {
-	border: 1px solid black;
-	max-width: none;
-}
-article figure {
-max-width: 100%;
-margin-left: 3em;
-float: right;
-}
-
-/*aside element*/
-aside{
-	max-width: 100%;
-	margin-left: 20em;
-	float: relative;
-	margin-right: 15em;
-}
-
-article figure.example {
-margin-top: 2em;
-}
-article figcaption {
-text-align: center;
-}
-
-
-
-/* footer section */
-footer {
-padding: 0.6em;
-background-color: #b149bb;
-color: ivory;
-text-align: center;
-}
-.accent {
-font-weight: bold;
-}
-
-
-
-/* print styles */
-@media print {
-body, h1, article, footer {
-color: rgb(0,0,0);
-background: rgb(255,255,255);
-}
-body {
-max-width: 100%;
+a {
+    font-family: HelveticaNeue;
+    color: #040303;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
 }
 nav {
-display: none;
+    height: 35px;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    padding: 15px 10px 0px 0px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #600;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
 }
-@page {
-margin: 0.75in;
+nav ul {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    float: center;
+}
+nav li {
+	width: auto;
+	display: inline-block;
+	list-style-type: none;
+	text-align: left;
+}
+nav a {
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #000000;
+    box-shadow: 10px 10px 6px -6px #000000;
+    background-image: -webkit-linear-gradient(270deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
+    -webkit-box-shadow: 10px 10px 6px -6px #000000;
+    margin-left: 0px;
+}
+header {
+    height: 290px;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    padding-top: px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #600;
+    float: left;
+    text-align: center;
+    background-size: cover;
+    background-color: #000000;
+}
+div.centered-section {
+	width: 1000px;
+	margin: 0px auto 0px auto;
+	align-items: center;
+}
+.category {
+    width: 300px;
+    min-height: 420px;
+    margin: 20px 0px 10px 25px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-box-shadow: 3px 6px 2px 0px rgba(35, 31, 32, 0.75);
+    box-shadow: 3px 6px 2px 0px rgba(35, 31, 32, 0.75);
+}
+.category h2 {
+    margin: 0;
+    padding: 10px;
+    color: #034580;
+    font-size: 20px;
+    font-weight: 400;
+	}
+.category img {
+	width: 300px;
+	height: 175px;
+	padding: 0px;
+	margin: 0px -30px -10px -10px;
+}
+.category p {
+	margin: -10px 0px -10px 0px;
+	padding: 10px 10px 10px 10px;
+}
+.category p a {
+    font-weight: bold;
+    font-size: 13px;
+}
+footer {
+	height: 10px;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	float: left;
+	margin-top: 0px;
+}
+footer p {
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
 }
