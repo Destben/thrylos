@@ -96,17 +96,22 @@ nav a {
 
 
 /* You don't need to specify that a div is using the class. (div.centered-section)  */
+
+
 .centered-section {
     display: inline-flex;
-    justify-content: space-between;
-    justify-content: space-around;
+    justify-content: space-between; 
 
+
+    padding-top:5%;
+    padding-bottom:5%;
     height: 70%;
 	width: 100%;
 	margin: auto auto auto auto;
 	align-items: center;
     margin-right: 0;
 }
+
 .category {
     height: 50rem;
     min-height: 42rem;
