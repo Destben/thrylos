@@ -1,0 +1,9 @@
+html {
+    /* having the html element as a constant across all pages makes the website more uniform*/
+    width: 100%;
+    height: 100%;
+    color: black;
+
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 62.5%; /* Equal to 10px */
+}

@@ -1,6 +1,6 @@
-﻿body {
+﻿@import "global.css";
+body {
     margin: 0px;
-    font-size: 13px;
     line-height: 21px;
     color: #000000;
     padding: 0px;
@@ -13,6 +13,7 @@
     background-image: -o-linear-gradient(270deg,rgba(255,0,4,1.00) 0%,rgba(0,21,255,1.00) 100%);
     background-image: linear-gradient(180deg,rgba(255,0,4,1.00) 0%,rgba(0,21,255,1.00) 100%);
 }
+
 contentstart h2 {
     text-align: center;
 	float:auto;
@@ -26,67 +27,81 @@ a {
     font-weight: 400;
     text-decoration: none;
 }
+
 nav {
-    height: 35px;
+    height: 60px;
     width: 100%;
-    margin: 0px auto 0px auto;
-    padding: 15px 10px 0px 0px;
-    background-color: #ffffff;
-    border-bottom: 3px solid #600;
-    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
-    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(0,21,255,1.00) 100%);
+
+    align-items: center; /* Centers the items vertically */
+    display: flex; /*  Allows the nav to take up 100% of the area without leaving a random space  */
+
+    background-color: #171717;
 }
+
+
+
 nav ul {
     width: auto;
-    margin: 0px;
+    margin-left: 2rem; /* 62.5% font size = 10px |  10px * .2 = 5px  */
+    margin-right: 2rem;
     padding: 0px;
     float: center;
 }
 nav li {
 	width: auto;
 	display: inline-block;
-	list-style-type: none;
-	text-align: left;
+    /* Removing more stuff that doesn't apply *yet* */
 }
 nav a {
-    margin-top: 25px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 5px;
-    background-repeat: no-repeat;
-    background-position: right center;
-    color: #000000;
-    box-shadow: 10px 10px 6px -6px #000000;
-    background-image: -webkit-linear-gradient(270deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
-    background-image: linear-gradient(180deg,rgba(41,223,232,1.00) 0%,rgba(49,101,208,1.00) 100%);
-    -webkit-box-shadow: 10px 10px 6px -6px #000000;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+    /* Notes: The color setting isn't needed anymore because it is stated in global.css */
+
+    background: rgba(49,101,208,1.00);
     margin-left: 0px;
 }
 
 
 
 header {
-    height: 290px;
+    display: flex; /* Makes it possible to always center the thrylos logo in the middle, regardless of size  */
+    justify-content: center; /* Horizontally centers the logo */
+    align-items: center; /* Vertically centers the logo */
+    /* Sidenote: You might want to make the logo image transparent. */
+
+
+    height: 150px;
     width: 100%;
-    margin: 0px auto 0px auto;
-    padding-top: px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #600;
+
+    margin: 0;
+    padding: 0;
+
+
+    border-bottom: 2px 0 white;
     float: left;
     text-align: center;
     background-size: cover;
     background-color: #000000;
 }
-div.centered-section {
+
+
+
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* You don't need to specify that a div is using the class. (div.centered-section)  */
+.centered-section {
+    display: flex;
+
+    
+    height: 100%;
 	width: 1000px;
 	margin: 0px auto 0px auto;
 	align-items: center;
@@ -102,27 +117,32 @@ div.centered-section {
     -webkit-box-shadow: 3px 6px 2px 0px rgba(35, 31, 32, 0.75);
     box-shadow: 3px 6px 2px 0px rgba(35, 31, 32, 0.75);
 }
+
 .category h2 {
     margin: 0;
     padding: 10px;
     color: #034580;
     font-size: 20px;
     font-weight: 400;
-	}
+}
+
 .category img {
 	width: 300px;
 	height: 175px;
 	padding: 0px;
 	margin: 0px -30px -10px -10px;
 }
+
 .category p {
 	margin: -10px 0px -10px 0px;
 	padding: 10px 10px 10px 10px;
 }
+
 .category p a {
     font-weight: bold;
     font-size: 13px;
 }
+
 footer {
 	height: 10px;
 	text-align: center;
@@ -134,6 +154,7 @@ footer {
 	float: left;
 	margin-top: 0px;
 }
+
 footer p {
     margin: 0px;
     padding: 5px 0px 5px 0px;
