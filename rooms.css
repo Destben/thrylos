@@ -112,7 +112,6 @@ nav a {
     min-height: 42rem;
     width: 30rem; /* Same as 300px | 10px * 30.0rem = 300px */
     
-    float: left;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -212,3 +211,26 @@ footer p {
     margin-right: 0px;
     margin-bottom: 0px;
 }
+
+
+
+/* ----------------------------------------------- */
+/*                Responsiveness                   */
+/* ----------------------------------------------- */
+
+ /* Responsive layout - when the screen is less than 900px
+   wide, make the inner class width 80% of its parent*/
+   /* 9:18 Responsiveness */
+   @media screen and (min-width: 400px) and (max-width: 500px) and (min-height: 800px) and (max-height: 900px) {
+    html{
+        font-size:43.75%; /*  7px  */
+    }
+
+    .centered-section {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+  }
