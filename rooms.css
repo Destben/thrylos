@@ -1,4 +1,11 @@
 ﻿@import "global.css";
+
+:root /*This is a way of adding variables in css. Think of the root "class" as a place where you would store all your global variables
+*/
+{
+    --catSpace: 18%;
+}
+
 body {
     margin: 0px;
     line-height: 3rem;;
@@ -121,6 +128,30 @@ nav a {
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
 
+}
+
+/* Sorry for this being overcomplicated, but it was the only way I could get the categories back to the spacing that they were
+at before. Later on, I think I will try to get flex box to work again. */
+
+.category:nth-of-type(1) 
+/* "nth-of-type(n)" allows you to change the style of a specific item depending on how early it was rendered.   */
+/*
+in rooms.html, you have 3 category elements. 
+This specific one "nth-of-type(1)" will change the first "category" aka the services section
+*/
+{
+    margin-left: var(--catSpace); /* This is how you call a variable from the :root class */
+}
+
+.category:nth-of-type(2) 
+{
+    margin-left: var(--catSpace / 2); /* This is how you call a variable from the :root class */
+    margin-right: var(--catSpace / 2)
+}
+
+.category:nth-of-type(3)
+{
+    margin-right: var(--catSpace);
 }
 
 .category h2 {
