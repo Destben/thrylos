@@ -19,51 +19,19 @@ contentstart h2 {
 
 }
 
+
+a:link, a:visited {
+    color:#034580
+}
+
+a:hover {
+    color:rgb(169, 8, 8)
+}
+
 a {
-    font-family: HelveticaNeue;
-    color: #040303;
-    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
 }
-
-nav {
-    height: 60px;
-    width: 100%;
-
-    align-items: center; /* Centers the items vertically */
-    display: flex; /*  Allows the nav to take up 100% of the area without leaving a random space  */
-
-    background-color: #171717;
-}
-
-
-
-nav ul {
-    width: auto;
-    margin-left: 2rem; /* 62.5% font size = 10px |  10px * .2 = 5px  */
-    margin-right: 2rem;
-    padding: 0px;
-    float: center;
-}
-nav li {
-	width: auto;
-	display: inline-block;
-    /* Removing more stuff that doesn't apply *yet* */
-}
-nav a {
-    padding-top: 1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 1rem;
-
-    /* Notes: The color setting isn't needed anymore because it is stated in global.css */
-
-    background: rgba(49,101,208,1.00);
-    margin-left: 0px;
-}
-
-
 
 header {
     display: flex; /* Makes it possible to always center the thrylos logo in the middle, regardless of size  */
@@ -86,28 +54,64 @@ header {
 }
 
 
-
-
 header h1 {
     margin: 0;
     padding: 0;
 }
 
 
+nav {
+    height: 60px;
+    width: 100%;
+
+    align-items: center; /* Centers the items vertically */
+    display: flex; /*  Allows the nav to take up 100% of the area without leaving a random space  */
+
+    background-color: #171717;
+}
+
+nav ul {
+    width: auto;
+    margin-left: 2rem; /* 62.5% font size = 10px |  10px * .2 = 5px  */
+    margin-right: 2rem;
+    padding: 0px;
+    float: center;
+}
+nav li {
+	width: auto;
+	display: inline-block;
+    /* Removing more stuff that doesn't apply *yet* */
+}
+nav a {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+    /* Notes: The color setting isn't needed anymore because it is stated in global.css */
+
+    background: rgb(25, 86, 208);
+    margin-left: 0px;
+}
+
+
 /* You don't need to specify that a div is using the class. (div.centered-section)  */
 .centered-section {
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
     height: 70%;
-	width: 1000px;
+	width: 100%;
 	margin: auto auto auto auto;
 	align-items: center;
+    margin-right: 0;
 }
 .category {
-    height: 500px;
-    min-height: 420px;
+    height: 50rem;
+    min-height: 42rem;
     width: 30rem; /* Same as 300px | 10px * 30.0rem = 300px */
     
-    margin: 20px 0px 10px 25px;
     float: left;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom-left-radius: 15px;
@@ -117,28 +121,25 @@ header h1 {
 
 .category h2 {
     margin: 0;
-    padding: 10px;
+    padding: 1rem;
     color: #034580;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: 400;
 }
 
 .category img {
-	width: 300px;
-	height: 175px;
-	padding: 0px;
-	margin: 0px -30px -10px -10px;
+	width: 30rem;
+	height: 17.5rem;
+    margin-top: 2rem;
 }
 
 .category p {
-    font-size: 2rem;
-	margin: -10px 0px -10px 0px;
-	padding: 10px 10px 10px 10px;
-}
+    font-size: 1.5rem;
 
-.category a {
-    font-weight: bold;
-    font-size: 13px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 footer {
