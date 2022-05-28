@@ -19,7 +19,6 @@ a {
     text-decoration: none;
     font-style: italic;
     text-align: left;
-    float: left;
 }
 nav {
     height: 35px;
@@ -139,103 +138,4 @@ footer p {
     font-weight: 400;
 }
 footer a {
-}
-/* main content */
-article {
-background: url("images/background.jpg");
-background-size: cover;
-}
-article div {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 3% 1em;
-background-color: ivory;
-overflow: auto;
-box-shadow: 0 10px 6px -6px #777;
-}
-h2 {
-padding: 0.4em 0.4em 0;
-text-align: center;
-font-family: Bitter, "Times New Roman", Times, serif;
-font-size: 2em;
-font-weight: 700;
-}
-h3 {
-margin-top: 1.4em;
-font-size: 1.6em;
-font-family: Bitter, "Times New Roman", Times, serif;
-font-weight: 700;
-clear: both;
-}
-article p {
-padding-top: 1em;
-}
-article p.pullquote {
-font-size: 1.7em;
-}
-article p.imagemap {
-	text-align: center;
-} 
-article p.imagemap img {
-	border: 1px solid black;
-	max-width: none;
-}
-article figure {
-max-width: 100%;
-margin-left: 3em;
-float: right;
-}
-
-/*aside element*/
-aside{
-	max-width: 100%;
-	margin-left: 20em;
-	float: relative;
-	margin-right: 15em;
-}
-
-article figure.example {
-margin-top: 2em;
-}
-article figcaption {
-text-align: center;
-}
-
-
-
-/* footer section */
-footer {
-padding: 0.6em;
-background-color: #b149bb;
-color: ivory;
-text-align: center;
-}
-.accent{
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-span {
-    width: 300px;
-}
-aside{
-	  background-image: -webkit-linear-gradient(270deg,rgba(43,5,138,1.00) 0%,rgba(0,5,255,1.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(43,5,138,1.00) 0%,rgba(0,5,255,1.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(43,5,138,1.00) 0%,rgba(0,5,255,1.00) 100%);
-    background-image: linear-gradient(180deg,rgba(43,5,138,1.00) 0%,rgba(0,5,255,1.00) 100%);
-    box-shadow: 0 10px 6px -6px #000000;
-    -webkit-box-shadow: 0 10px 6px -6px #000000;
-	border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-    border-top-left-radius: 30px;
-}
-.box{
-    float: center;
-    padding-left: 310px;
-    padding-right: 310px;
 }
