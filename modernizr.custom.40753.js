@@ -411,4 +411,9 @@ window.Modernizr = function(a, b, c) {
         }
     }(this, document), Modernizr.load = function() {
         yepnope.apply(window, [].slice.call(arguments, 0))
+        const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
     };
